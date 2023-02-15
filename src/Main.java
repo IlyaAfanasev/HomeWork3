@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
 
     }
 
@@ -104,7 +105,26 @@ public class Main {
         float averege =(float) (totalWeightGr/(weightGr1+weightGr2));
         System.out.println("Потребуется " +averege+ " дней в среднем");
 
-
+    }
+    public static void task8() {
+        int salaryMasha = 67760;
+        int increasedSalaryMasha =(int)(salaryMasha*1.1);
+        int annualSalaryMasha = salaryMasha*12;
+        int increasedAnnualSalaryMasha = increasedSalaryMasha*12;
+        int annualSalaryDifferenceMasha = increasedAnnualSalaryMasha % annualSalaryMasha;
+        System.out.println("Маша теперь получает " +increasedSalaryMasha+ " рублей. Годовой доход вырос на " +annualSalaryDifferenceMasha+" рублей");
+        int salaryDenis = 83690;
+        int increasedSalaryDenis =(int)(salaryDenis*1.1);
+        int annualSalaryDenis = salaryDenis*12;
+        int increasedAnnualSalaryDenis = increasedSalaryDenis*12;
+        int annualSalaryDifferenceDenis = increasedAnnualSalaryDenis % annualSalaryDenis;
+        System.out.println("Денис теперь получает " +increasedSalaryDenis+ " рублей. Годовой доход вырос на " +annualSalaryDifferenceDenis+" рублей");
+        int salaryKristina = 76230;
+        int increasedSalaryKristina =(int)(salaryKristina*1.1);
+        int annualSalaryKristina = salaryKristina*12;
+        int increasedAnnualSalaryKristina = increasedSalaryKristina*12;
+        int annualSalaryDifferenceKristina = increasedAnnualSalaryKristina % annualSalaryKristina;
+        System.out.println("Кристина теперь получает " +increasedSalaryKristina+ " рублей. Годовой доход вырос на " +annualSalaryDifferenceKristina+" рублей");
 
     }
 }
