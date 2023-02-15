@@ -85,23 +85,23 @@ public class Main {
         byte weightOneIceCreamGr = 100;
         byte eggs =4;
         byte weightOneEggsGr = 70;
-        short totalWeightBreakfastGr = (short) (totalBananas*weightOneBananaGr+weight100MlMilkGr*2+totalIceCream*weightOneIceCreamGr+weightOneEggsGr*eggs);
+        float totalWeightBreakfastGr = (float) (totalBananas*weightOneBananaGr+weight100MlMilkGr*2+totalIceCream*weightOneIceCreamGr+weightOneEggsGr*eggs);
         System.out.println(totalWeightBreakfastGr+ "гр");
-        double toеatlWeightBreakfastKg = totalWeightBreakfastGr / 1000;
+        float toеatlWeightBreakfastKg = (float) (totalWeightBreakfastGr / 1000);
         System.out.println(toеatlWeightBreakfastKg + "кг");
 
 
     }
     public static void task7() {
         byte totalWeightKg = 7;
-        short totalWeightGr = (short) (totalWeightKg*1000);
+        float totalWeightGr = totalWeightKg*1000;
         short weightGr1= 250;
         short weightGr2 = 500;
         short daysAtTheFirstOption = (short) (totalWeightGr/weightGr1);
         System.out.println("Потребуется " +daysAtTheFirstOption+ " при скидывании 250гр веса в день");
         short daysAtTheSecondOption = (short) (totalWeightGr/weightGr2);
         System.out.println("Потребуется " +daysAtTheSecondOption+ " при скидывании 500гр веса в день");
-        double averege = totalWeightGr/(weightGr1+weightGr2);
+        float averege =(float) (totalWeightGr/(weightGr1+weightGr2));
         System.out.println("Потребуется " +averege+ " дней в среднем");
 
 
