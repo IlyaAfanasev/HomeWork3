@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
 
     }
 
@@ -60,6 +61,17 @@ public class Main {
         int bottlesPerMount = bottlesADay*30;
         System.out.println("За один месяц машина произвела "+bottlesPerMount+ " штук бутылок");
 
+
+    }
+    public static void task5() {
+        byte totalPaint = 120;
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass =4;
+        byte totalPaintPerClass = (byte) (whitePaintPerClass+brownPaintPerClass);
+        byte totalClasses = (byte) (totalPaint/totalPaintPerClass);
+        byte totalWhitePaint = (byte) (totalClasses*whitePaintPerClass);
+        byte totalBrownPaint = (byte) (totalClasses*brownPaintPerClass);
+        System.out.println("В школе, где "+totalClasses+ " классов, нужно " + totalWhitePaint + " банок белой краски и "+totalBrownPaint+ " банок коричневой краски");
 
     }
 }
