@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
     }
 
@@ -46,6 +47,19 @@ public class Main {
         byte totalStudents = (byte) (ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
         short sheetsPerStudent = (short) (totalSheets/totalStudents);
         System.out.println("На каждого ученика рассчитано "+sheetsPerStudent+ " листов бумаги");
+
+    }
+    public static void task4() {
+        byte bottlesIn2minutes = 16;
+        short bottlesIn20minutes = (short) (bottlesIn2minutes * 10);
+        System.out.println("За 20 минут машина произвела "+bottlesIn20minutes+ " штук бутылок");
+        short bottlesADay = (short) (bottlesIn20minutes*3*24);
+        System.out.println("За один день машина произвела "+bottlesADay+ " штук бутылок");
+        int bottlesIn3Days = bottlesADay*3;
+        System.out.println("За 3 дня машина произвела "+bottlesIn3Days+ " штук бутылок");
+        int bottlesPerMount = bottlesADay*30;
+        System.out.println("За один месяц машина произвела "+bottlesPerMount+ " штук бутылок");
+
 
     }
 }
