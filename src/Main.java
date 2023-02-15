@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
 
     }
 
@@ -19,5 +20,14 @@ public class Main {
         System.out.println("Значение переменной variableSix с типом double равно " + variableSix);
 
 
+    }
+    public static void task2() {
+        float someDate = 27.12f;
+        long distanceToTheStar = 987678965549L;
+        float somethingSmall = 2.786f;
+        short highAltitude = 569;
+        short veryCold = -159;
+        short someMoneyOnTheCard = 27897;
+        byte ageGrandfather = 67;
     }
 }
