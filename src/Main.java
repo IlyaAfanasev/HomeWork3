@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
 
     }
 
@@ -72,6 +73,22 @@ public class Main {
         byte totalWhitePaint = (byte) (totalClasses*whitePaintPerClass);
         byte totalBrownPaint = (byte) (totalClasses*brownPaintPerClass);
         System.out.println("В школе, где "+totalClasses+ " классов, нужно " + totalWhitePaint + " банок белой краски и "+totalBrownPaint+ " банок коричневой краски");
+
+    }
+    public static void task6() {
+        byte totalBananas = 5;
+        byte weightOneBananaGr = 80;
+        short totalMilkMl= 200;
+        byte weight100MlMilkGr = 105;
+        byte totalIceCream = 2;
+        byte weightOneIceCreamGr = 100;
+        byte eggs =4;
+        byte weightOneEggsGr = 70;
+        short totalWeightBreakfastGr = (short) (totalBananas*weightOneBananaGr+weight100MlMilkGr*2+totalIceCream*weightOneIceCreamGr+weightOneEggsGr*eggs);
+        System.out.println(totalWeightBreakfastGr+ "гр");
+        double toеatlWeightBreakfastKg = totalWeightBreakfastGr / 1000;
+        System.out.println(toеatlWeightBreakfastKg + "кг");
+
 
     }
 }
