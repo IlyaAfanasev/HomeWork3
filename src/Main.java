@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
 
     }
 
@@ -36,5 +37,15 @@ public class Main {
         System.out.println(someMoneyOnTheCard);
         byte ageGrandfather = 67;
         System.out.println(ageGrandfather);
+    }
+    public static void task3() {
+        byte ludmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short totalSheets = 480;
+        byte totalStudents = (byte) (ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
+        short sheetsPerStudent = (short) (totalSheets/totalStudents);
+        System.out.println("На каждого ученика рассчитано "+sheetsPerStudent+ " листов бумаги");
+
     }
 }
