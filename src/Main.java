@@ -99,28 +99,31 @@ public class Main {
         short weightGr1= 250;
         short weightGr2 = 500;
         short daysAtTheFirstOption = (short) (totalWeightGr/weightGr1);
-        System.out.println("Потребуется " +daysAtTheFirstOption+ " при скидывании 250гр веса в день");
+        System.out.println("Потребуется " +daysAtTheFirstOption+ " при сжигании 250гр веса в день");
         short daysAtTheSecondOption = (short) (totalWeightGr/weightGr2);
-        System.out.println("Потребуется " +daysAtTheSecondOption+ " при скидывании 500гр веса в день");
+        System.out.println("Потребуется " +daysAtTheSecondOption+ " при сжигании 500гр веса в день");
         short averege =(short) ((daysAtTheFirstOption+daysAtTheSecondOption)/2);
         System.out.println("Потребуется " +averege+ " дней в среднем");
 
     }
     public static void task8() {
         int salaryMasha = 67760;
-        int increasedSalaryMasha =(int)(salaryMasha*1.1);
+        int amountOfIncreaseMasha = salaryMasha/10;
+        int increasedSalaryMasha =salaryMasha+amountOfIncreaseMasha;
         int annualSalaryMasha = salaryMasha*12;
         int increasedAnnualSalaryMasha = increasedSalaryMasha*12;
         int annualSalaryDifferenceMasha = increasedAnnualSalaryMasha % annualSalaryMasha;
         System.out.println("Маша теперь получает " +increasedSalaryMasha+ " рублей. Годовой доход вырос на " +annualSalaryDifferenceMasha+" рублей");
         int salaryDenis = 83690;
-        int increasedSalaryDenis =(int)(salaryDenis*1.1);
+        int amountOfIncreaseDenis = salaryDenis/10;
+        int increasedSalaryDenis =salaryDenis+amountOfIncreaseDenis;
         int annualSalaryDenis = salaryDenis*12;
         int increasedAnnualSalaryDenis = increasedSalaryDenis*12;
         int annualSalaryDifferenceDenis = increasedAnnualSalaryDenis % annualSalaryDenis;
         System.out.println("Денис теперь получает " +increasedSalaryDenis+ " рублей. Годовой доход вырос на " +annualSalaryDifferenceDenis+" рублей");
         int salaryKristina = 76230;
-        int increasedSalaryKristina =(int)(salaryKristina*1.1);
+        int amountOfIncreaseKristina = salaryKristina/10;
+        int increasedSalaryKristina =salaryKristina+amountOfIncreaseKristina;
         int annualSalaryKristina = salaryKristina*12;
         int increasedAnnualSalaryKristina = increasedSalaryKristina*12;
         int annualSalaryDifferenceKristina = increasedAnnualSalaryKristina % annualSalaryKristina;
