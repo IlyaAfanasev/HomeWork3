@@ -32,13 +32,13 @@ public class Main {
         System.out.println(someDate);
         long distanceToTheStar = 987678965549L;
         System.out.println(distanceToTheStar);
-        float somethingSmall = 2.786f;
+        double somethingSmall = 2.786;
         System.out.println(somethingSmall);
         short highAltitude = 569;
         System.out.println(highAltitude);
         short veryCold = -159;
         System.out.println(veryCold);
-        short someMoneyOnTheCard = 27897;
+        int someMoneyOnTheCard = 27897;
         System.out.println(someMoneyOnTheCard);
         byte ageGrandfather = 67;
         System.out.println(ageGrandfather);
