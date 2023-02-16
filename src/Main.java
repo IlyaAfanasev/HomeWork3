@@ -1,6 +1,13 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+        task8();
 
     }
 
@@ -18,6 +25,109 @@ public class Main {
         double variableSix = 587.879642354;
         System.out.println("Значение переменной variableSix с типом double равно " + variableSix);
 
+
+    }
+    public static void task2() {
+        float someDate = 27.12f;
+        System.out.println(someDate);
+        long distanceToTheStar = 987678965549L;
+        System.out.println(distanceToTheStar);
+        double somethingSmall = 2.786;
+        System.out.println(somethingSmall);
+        short highAltitude = 569;
+        System.out.println(highAltitude);
+        short veryCold = -159;
+        System.out.println(veryCold);
+        int someMoneyOnTheCard = 27897;
+        System.out.println(someMoneyOnTheCard);
+        byte ageGrandfather = 67;
+        System.out.println(ageGrandfather);
+    }
+    public static void task3() {
+        byte ludmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short totalSheets = 480;
+        byte totalStudents = (byte) (ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
+        short sheetsPerStudent = (short) (totalSheets/totalStudents);
+        System.out.println("На каждого ученика рассчитано "+sheetsPerStudent+ " листов бумаги");
+
+    }
+    public static void task4() {
+        byte bottlesIn2minutes = 16;
+        short bottlesIn20minutes = (short) (bottlesIn2minutes * 10);
+        System.out.println("За 20 минут машина произвела "+bottlesIn20minutes+ " штук бутылок");
+        short bottlesADay = (short) (bottlesIn20minutes*3*24);
+        System.out.println("За один день машина произвела "+bottlesADay+ " штук бутылок");
+        int bottlesIn3Days = bottlesADay*3;
+        System.out.println("За 3 дня машина произвела "+bottlesIn3Days+ " штук бутылок");
+        int bottlesPerMount = bottlesADay*30;
+        System.out.println("За один месяц машина произвела "+bottlesPerMount+ " штук бутылок");
+
+
+    }
+    public static void task5() {
+        byte totalPaint = 120;
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass =4;
+        byte totalPaintPerClass = (byte) (whitePaintPerClass+brownPaintPerClass);
+        byte totalClasses = (byte) (totalPaint/totalPaintPerClass);
+        byte totalWhitePaint = (byte) (totalClasses*whitePaintPerClass);
+        byte totalBrownPaint = (byte) (totalClasses*brownPaintPerClass);
+        System.out.println("В школе, где "+totalClasses+ " классов, нужно " + totalWhitePaint + " банок белой краски и "+totalBrownPaint+ " банок коричневой краски");
+
+    }
+    public static void task6() {
+        byte totalBananas = 5;
+        byte weightOneBananaGr = 80;
+        short totalMilkMl= 200;
+        byte weight100MlMilkGr = 105;
+        byte totalIceCream = 2;
+        byte weightOneIceCreamGr = 100;
+        byte eggs =4;
+        byte weightOneEggsGr = 70;
+        float totalWeightBreakfastGr = (float) (totalBananas*weightOneBananaGr+weight100MlMilkGr*2+totalIceCream*weightOneIceCreamGr+weightOneEggsGr*eggs);
+        System.out.println(totalWeightBreakfastGr+ "гр");
+        float toеatlWeightBreakfastKg = (float) (totalWeightBreakfastGr / 1000);
+        System.out.println(toеatlWeightBreakfastKg + "кг");
+
+
+    }
+    public static void task7() {
+        byte totalWeightKg = 7;
+        short totalWeightGr = (short) (totalWeightKg*1000);
+        short weightGr1= 250;
+        short weightGr2 = 500;
+        short daysAtTheFirstOption = (short) (totalWeightGr/weightGr1);
+        System.out.println("Потребуется " +daysAtTheFirstOption+ " при сжигании 250гр веса в день");
+        short daysAtTheSecondOption = (short) (totalWeightGr/weightGr2);
+        System.out.println("Потребуется " +daysAtTheSecondOption+ " при сжигании 500гр веса в день");
+        short averege =(short) ((daysAtTheFirstOption+daysAtTheSecondOption)/2);
+        System.out.println("Потребуется " +averege+ " дней в среднем");
+
+    }
+    public static void task8() {
+        int salaryMasha = 67760;
+        int amountOfIncreaseMasha = salaryMasha/10;
+        int increasedSalaryMasha =salaryMasha+amountOfIncreaseMasha;
+        int annualSalaryMasha = salaryMasha*12;
+        int increasedAnnualSalaryMasha = increasedSalaryMasha*12;
+        int annualSalaryDifferenceMasha = increasedAnnualSalaryMasha % annualSalaryMasha;
+        System.out.println("Маша теперь получает " +increasedSalaryMasha+ " рублей. Годовой доход вырос на " +annualSalaryDifferenceMasha+" рублей");
+        int salaryDenis = 83690;
+        int amountOfIncreaseDenis = salaryDenis/10;
+        int increasedSalaryDenis =salaryDenis+amountOfIncreaseDenis;
+        int annualSalaryDenis = salaryDenis*12;
+        int increasedAnnualSalaryDenis = increasedSalaryDenis*12;
+        int annualSalaryDifferenceDenis = increasedAnnualSalaryDenis % annualSalaryDenis;
+        System.out.println("Денис теперь получает " +increasedSalaryDenis+ " рублей. Годовой доход вырос на " +annualSalaryDifferenceDenis+" рублей");
+        int salaryKristina = 76230;
+        int amountOfIncreaseKristina = salaryKristina/10;
+        int increasedSalaryKristina =salaryKristina+amountOfIncreaseKristina;
+        int annualSalaryKristina = salaryKristina*12;
+        int increasedAnnualSalaryKristina = increasedSalaryKristina*12;
+        int annualSalaryDifferenceKristina = increasedAnnualSalaryKristina % annualSalaryKristina;
+        System.out.println("Кристина теперь получает " +increasedSalaryKristina+ " рублей. Годовой доход вырос на " +annualSalaryDifferenceKristina+" рублей");
 
     }
 }
