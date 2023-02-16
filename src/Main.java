@@ -95,14 +95,14 @@ public class Main {
     }
     public static void task7() {
         byte totalWeightKg = 7;
-        float totalWeightGr = totalWeightKg*1000;
+        short totalWeightGr = (short) (totalWeightKg*1000);
         short weightGr1= 250;
         short weightGr2 = 500;
         short daysAtTheFirstOption = (short) (totalWeightGr/weightGr1);
         System.out.println("Потребуется " +daysAtTheFirstOption+ " при скидывании 250гр веса в день");
         short daysAtTheSecondOption = (short) (totalWeightGr/weightGr2);
         System.out.println("Потребуется " +daysAtTheSecondOption+ " при скидывании 500гр веса в день");
-        float averege =(float) (totalWeightGr/(weightGr1+weightGr2));
+        short averege =(short) ((daysAtTheFirstOption+daysAtTheSecondOption)/2);
         System.out.println("Потребуется " +averege+ " дней в среднем");
 
     }
