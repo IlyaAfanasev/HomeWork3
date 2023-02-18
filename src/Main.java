@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -12,6 +14,7 @@ public class Main {
     }
 
     public static void task1() {
+        System.out.println("     Задача 1");
         byte variableOne = 3;
         System.out.println("Значение переменной variableOne с типом byte равно " + variableOne);
         short variableTwo = -13857;
@@ -28,6 +31,7 @@ public class Main {
 
     }
     public static void task2() {
+        System.out.println("     Задача 2");
         float someDate = 27.12f;
         System.out.println(someDate);
         long distanceToTheStar = 987678965549L;
@@ -44,6 +48,7 @@ public class Main {
         System.out.println(ageGrandfather);
     }
     public static void task3() {
+        System.out.println("     Задача 3");
         byte ludmilaPavlovna = 23;
         byte annaSergeevna = 27;
         byte ekaterinaAndreevna = 30;
@@ -54,6 +59,7 @@ public class Main {
 
     }
     public static void task4() {
+        System.out.println("     Задача 4");
         byte bottlesIn2minutes = 16;
         short bottlesIn20minutes = (short) (bottlesIn2minutes * 10);
         System.out.println("За 20 минут машина произвела "+bottlesIn20minutes+ " штук бутылок");
@@ -67,6 +73,7 @@ public class Main {
 
     }
     public static void task5() {
+        System.out.println("     Задача 5");
         byte totalPaint = 120;
         byte whitePaintPerClass = 2;
         byte brownPaintPerClass =4;
@@ -78,6 +85,7 @@ public class Main {
 
     }
     public static void task6() {
+        System.out.println("     Задача 6");
         byte totalBananas = 5;
         byte weightOneBananaGr = 80;
         short totalMilkMl= 200;
@@ -86,27 +94,30 @@ public class Main {
         byte weightOneIceCreamGr = 100;
         byte eggs =4;
         byte weightOneEggsGr = 70;
-        float totalWeightBreakfastGr = (float) (totalBananas*weightOneBananaGr+weight100MlMilkGr*2+totalIceCream*weightOneIceCreamGr+weightOneEggsGr*eggs);
+        short totalWeightBreakfastGr = (short) (totalBananas*weightOneBananaGr+weight100MlMilkGr*2+totalIceCream*weightOneIceCreamGr+weightOneEggsGr*eggs);
         System.out.println(totalWeightBreakfastGr+ "гр");
-        float toеatlWeightBreakfastKg = (float) (totalWeightBreakfastGr / 1000);
+        float toеatlWeightBreakfastKg = (float) (totalWeightBreakfastGr / 1000f);
         System.out.println(toеatlWeightBreakfastKg + "кг");
 
 
     }
     public static void task7() {
+        System.out.println("     Задача 7");
         byte totalWeightKg = 7;
         short totalWeightGr = (short) (totalWeightKg*1000);
         short weightGr1= 250;
         short weightGr2 = 500;
+        float averegeWeight = (weightGr1 + weightGr2)/2;
         short daysAtTheFirstOption = (short) (totalWeightGr/weightGr1);
         System.out.println("Потребуется " +daysAtTheFirstOption+ " при сжигании 250гр веса в день");
         short daysAtTheSecondOption = (short) (totalWeightGr/weightGr2);
         System.out.println("Потребуется " +daysAtTheSecondOption+ " при сжигании 500гр веса в день");
-        short averege =(short) ((daysAtTheFirstOption+daysAtTheSecondOption)/2);
-        System.out.println("Потребуется " +averege+ " дней в среднем");
+        float averege =totalWeightGr/averegeWeight;
+        System.out.printf(Locale.US, "Потребуется %.1f дней в среднем%n" , averege);
 
     }
     public static void task8() {
+        System.out.println("     Задача 8");
         int salaryMasha = 67760;
         int amountOfIncreaseMasha = salaryMasha/10;
         int increasedSalaryMasha =salaryMasha+amountOfIncreaseMasha;
